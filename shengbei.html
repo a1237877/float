@@ -17,6 +17,8 @@
     }
     .content{
       padding: 0 200px;
+      /* overflow: scroll; */
+      /* overflow: hidden;  能使该元素达到bfc效果  auto scroll hidden 都能达到bfc效果 */
     }
     .text{
       text-align: center;
@@ -52,10 +54,18 @@
       
     
     }
-    .clearFix{
+    /* .clearFix{
         float: left;
 
-    }
+    } */
+    /* .content::after{   或者用clearFix 类名
+       content: "";
+      clear: both;
+      display: block; 
+       height: 0;
+      visibility: hidden; 
+    }  */
+
   </style>
 </head>
 <body>
